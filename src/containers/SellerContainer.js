@@ -12,7 +12,7 @@ class SellerContainer extends Component {
 }
  
 const mapStateToProps = state => {
-
+    
 }
 
 const mapDispatchToProps = dispatch => {
