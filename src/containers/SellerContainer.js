@@ -13,11 +13,15 @@ class SellerContainer extends Component {
 }
  
 const mapStateToProps = state => {
-    sellers: state.sellers
+    return {
+        sellers: state.sellers
+    }
 }
 
 const mapDispatchToProps = dispatch => {
-    addSellers: () => dispatch(addSellers())
+    return {
+        addSellers: () => dispatch(addSellers())
+    }
 }
  
 export default connect(mapStateToProps, mapDispatchToProps)(SellerContainer);
