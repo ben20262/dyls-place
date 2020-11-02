@@ -13,11 +13,15 @@ class CarContainer extends Component {
 }
 
 const mapStateToProps = state => {
-    cars: state.cars
+    return {
+        cars: state.cars
+    }
 }
 
 const mapDispatchToProps = dispatch => {
-    addSellers: () => dispatch(addSellers())
+    return {
+        addSellers: () => dispatch(addSellers())
+    }
 }
  
 export default connect(mapStateToProps, mapDispatchToProps)(CarContainer);
