@@ -1,12 +1,13 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux'
 import { addSellers } from '../actions/index'
+import Sellers from '../components/seller/Sellers'
  
 class SellerContainer extends Component {
     render() { 
         return (
             <div>
-                SellerContainer
+                <Sellers sellers={this.props.sellers} addSellers={this.props.addSellers} />
             </div>
         );
     }

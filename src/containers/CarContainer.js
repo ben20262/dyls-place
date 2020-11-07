@@ -1,12 +1,13 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux'
-import { addSellers } from '../actions/index'
+import { addCars } from '../actions/index'
+import Cars from '../components/Cars'
  
 class CarContainer extends Component {
     render() { 
         return (
             <div>
-                CarContainer
+                <Cars cars={this.props.cars} addCars={this.props.addCars} />
             </div>
         );
     }
@@ -20,7 +21,7 @@ const mapStateToProps = state => {
 
 const mapDispatchToProps = dispatch => {
     return {
-        addSellers: () => dispatch(addSellers())
+        addCars: () => dispatch(addCars())
     }
 }
  
