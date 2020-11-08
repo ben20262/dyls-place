@@ -13,22 +13,25 @@ import CarContainer from './containers/CarContainer'
 
 function App() {
 	return (
-		<div className="App">
-			<nav>
-				<ul>
-					<li><Link to='/'>Cars</Link></li>
-					<li><Link to='/Sellers'>Sellers</Link></li>
-				</ul>
-			</nav>
-			<Switch>
-				<Route path='/sellers'>
-					<SellerContainer />
-				</Route>
-				<Route path='/'>
-					<CarContainer />
-				</Route>
-			</Switch>
-		</div>
+		<Router>
+			<div className="App">
+				<h1>Dylz Place</h1>
+				<nav>
+					<ul>
+						<li><Link to='/'>Cars</Link></li>
+						<li><Link to='/Sellers'>Sellers</Link></li>
+					</ul>
+				</nav>
+				<Switch>
+					<Route path='/sellers'>
+						<SellerContainer />
+					</Route>
+					<Route path='/'>
+						<CarContainer />
+					</Route>
+				</Switch>
+			</div>
+		</Router>
 	);
 }
 
