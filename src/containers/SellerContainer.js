@@ -7,6 +7,7 @@ class SellerContainer extends Component {
     render() { 
         return (
             <div>
+                <h2>Sellers</h2>
                 <Sellers sellers={this.props.sellers} addSellers={this.props.addSellers} />
             </div>
         );
